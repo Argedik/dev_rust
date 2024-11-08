@@ -1,33 +1,33 @@
-struct Mesaj {
-  icerik: String,
+pub struct Mesaj {
+  pub icerik: String,
 }
 
 impl Mesaj {
-  fn yeni(ilk_metin: &str) -> Mesaj {
+  pub fn yeni(ilk_metin: &str) -> Mesaj {
       Mesaj {
           icerik: ilk_metin.to_string(),
       }
   }
 
   // Mesaj'a metin ekleyen bir fonksiyon
-  fn ekle(&mut self, metin: &str) -> &mut Mesaj {
+  pub fn ekle(&mut self, metin: &str) -> &mut Mesaj {
       self.icerik.push_str(metin);
       self // Kendini döndürerek peş peşe çağrılabilir hale getiriyoruz
   }
 
   // Mesaj'ın içeriğini büyük harfe çeviren bir fonksiyon
-  fn buyuk_harf(&mut self) -> &mut Mesaj {
+  pub fn buyuk_harf(&mut self) -> &mut Mesaj {
       self.icerik = self.icerik.to_uppercase();
       self // Kendini döndürerek peş peşe çağrılabilir hale getiriyoruz
   }
 
   // İçeriği ekrana yazdıran bir fonksiyon
-  fn yazdir(&self) {
+  pub fn yazdir(&self) {
       println!("{}", self.icerik);
   }
 }
 
-fn main() {
+pub fn test_main() {
   // `mut` ile değiştirilebilir bir `Mesaj` nesnesi oluşturuyoruz
   let mut mesaj = Mesaj::yeni("Selam");
 
