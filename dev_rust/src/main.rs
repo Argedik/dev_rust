@@ -1,19 +1,18 @@
-#[derive(Debug)]
-struct Mesaj {
-    text: String
-}
 
-impl Mesaj {
-    fn yeni_mesaj(ilk_mesaj: String)->Mesaj{
-        Mesaj{
-            text: ilk_mesaj
-        }
-    }
-}
+mod message; // message.rs dosyasını modül olarak ekliyoruz.
+use message::Mesaj; // message modülünden Mesaj veri yapısını kullanıyoruz.
+
+mod input;
+use input::Veri;
 
 fn main (){
-    let mesaj = Mesaj::yeni_mesaj(String::from("çoktan başladık"));
+    let mut mesaj = Mesaj::yeni_mesaj("çoktan başladık");
     println!("{:?}", mesaj);
-    println!("{}", mesaj.text)
+    println!("{}", mesaj.text);
 
+    mesaj.ekle(" test")
+    .buyuk_harf().yazdir().ekle("asd").yazdir();
+    mesaj.yazdir();
+
+    Veri::user_data().yazdir();
 }
