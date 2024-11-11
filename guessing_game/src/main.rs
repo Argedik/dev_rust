@@ -15,12 +15,12 @@ fn main() {
     println!("You guessed: {}", guess);
     test::test_main();
 
-  // `Mesaj` yapısını kullanma
+    // `Mesaj` yapısını kullanma
     let mut mesaj = Mesaj::yeni("Rust öğrenmek");
     mesaj
         .ekle(" çok eğlenceli")
         .buyuk_harf()
         .ekle(" VE ÖĞRETİCİ.");
-  mesaj.yazdir(); // Çıktı: RUST ÖĞRENMEK ÇOK EĞLENCELİ VE ÖĞRETİCİ.
+    mesaj.yazdir(); // Çıktı: RUST ÖĞRENMEK ÇOK EĞLENCELİ VE ÖĞRETİCİ.
 }
 
