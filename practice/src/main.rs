@@ -3,5 +3,5 @@ mod deneme;
 
 fn main() {
   let test = Rvalue::rvalue("deneme");
-  println!("{}", test)
+  println!("{:?}", test.data.to_string())
 }
