@@ -26,3 +26,6 @@
 ***&mut ile mut arasındaki fark;*** **mut** main fonksiyonu içinde değiştirilebilir. **&mut** değişkenin bellekte referans olarak aldığı değişkenin değerini değiştiriyor.
 ***struct*** <u>Veri türleri başlığı altına yer alır.</u> Javascriptte class içine tanımlanan constructor örneğine benzer ya da es6 öncesi obje tanımlamasına benzer bir yapı. c#, c, c++, go gibi dillerde de kullanılıyor. 
 ***impl*** 
+
+
+***cargo modules structure*** **cargo install cargo-modules** ile projemizin klasör ve dosya yapılandırmasına göz atabiliyoruz.

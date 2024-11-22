@@ -5,4 +5,9 @@ name="chapter_01"
 version = "0.1.0"
 edition = "2024"
 
+<<<<<<< HEAD
 [dependencies]
+=======
+[dependencies]
+actix-web = "4.0"
+>>>>>>> 2ff79087f3d5ed53a6bf8e5219974abfd20e6c57
