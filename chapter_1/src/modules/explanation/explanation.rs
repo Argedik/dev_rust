@@ -1,7 +1,7 @@
-
 use std::io;
 
 //Dizi elemanlarını görüntüleyen fonksiyon
+#[allow(dead_code)]
 pub fn explain_array_indexing () {
   let a = [1, 2, 3, 4, 5];
   println!("Please enter an array index.");
