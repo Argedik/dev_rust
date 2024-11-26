@@ -27,8 +27,6 @@
 ***struct*** <u>Veri türleri başlığı altına yer alır.</u> Javascriptte class içine tanımlanan constructor örneğine benzer ya da es6 öncesi obje tanımlamasına benzer bir yapı. c#, c, c++, go gibi dillerde de kullanılıyor. 
 ***impl*** 
 
-<<<<<<< Updated upstream
-
 ***cargo modules structure*** **cargo install cargo-modules** ile projemizin klasör ve dosya yapılandırmasına göz atabiliyoruz.
 =======
 ---
@@ -102,4 +100,3 @@ yield
 **Tuple Type** Çeşitli türlerdeki bir dizi değeri tek bir bileşik türde gruplamanın genel bir yoludur. *(let tup: (i32, f64, u8) = (500, 6.4, 1); ) ((let tup = (500, 6.4, 1); let (x, y, z) = tup;) . (nokta) ile de değerlere erişilebiliyor. (let x: (i32, f64, u8) = (500, 6.4, 1); let five_hundred = x.0; (0 yerine 1, 2 de yazılabilir.)))*
 **Array Type** Birden fazla değerden oluşan bir koleksiyona sahip olmanın bir başka yolu da dizidir. Tuple'ın aksine, bir dizinin her elemanı aynı türde olmalıdır. Sabit uzunluktadır. *(let a: [i32; 5] = [1, 2, 3, 4, 5]; let a = [1, 2, 3, 4, 5]; let first = a[0];)*
 
->>>>>>> Stashed changes
