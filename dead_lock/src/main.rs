@@ -83,3 +83,12 @@ pub fn poisoning() {
 
   println!("Log file operations completed");
 }
+
+
+deadlock olma problemi
+Şu anda her iki thread birbirini kitlediği için  mutexguard larıyla birbirlerini bekliyorlar o yüzden işlem sonlanmıyor.
+Burada çözüm ne olabilir deadlock'a düşmemek için 
+Thread lerin aslında kullandıkları mutexguard larda bunların aynı sırada çalıştırılması öneriliyor.
+Yani ilk thread önce my_account_clone u daha sonra other_account_clone u kilitleyerek işlem yaparken, diğeri önce target_account u kilitleyerek başladı bu sürece. Bunun sıralı yapılması öneriliyor. 
+Burada gerçekten sıralı işletirsek thread içindeki mutexguardları sorun çözülür mü 
+
