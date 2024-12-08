@@ -1,0 +1,33 @@
+[dependencies]
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+
+use warp::Filter;
+
+#[tokio::main]
+async fn main() {
+    // Statik dosyalar servisi
+    let site = warp::fs::dir("static");
+
+    // Sunucuyu başlat
+    warp::serve(site)
+        .run(([127, 0, 0, 1], 3030))
+        .await;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tek Sayfalık Site</title>
+</head>
+<body>
+    <h1>Merhaba, Rust Dünyası!</h1>
+    <p>Bu, Rust ile yazılmış basit bir tek sayfa web sitesidir.</p>
+</body>
+</html>
