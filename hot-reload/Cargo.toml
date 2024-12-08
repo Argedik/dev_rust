@@ -1,0 +1,8 @@
+[package]
+name = "hot-reload"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib = { version = "0.1.0", path = "lib" }
+hot-lib-reloader = "^0.7"
