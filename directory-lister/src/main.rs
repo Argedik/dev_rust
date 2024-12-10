@@ -5,8 +5,8 @@ use std::path::Path;
 
 fn main() {
     // let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\besin-uygulamasi";
-    let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\rust";
-
+    // let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\rust";
+    let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\rust\\website\\with_rust";
     let mut output = Vec::new(); // Dosya yolu ve içeriğini saklamak için bir koleksiyon
     let mut ignored = HashSet::new(); // Hariç tutulacak dosya ve klasörlerin seti
 
