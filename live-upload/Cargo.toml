@@ -1,0 +1,8 @@
+[package]
+name = "live-upload"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = "0.21" 
+wasm-bindgen = "0.2"
