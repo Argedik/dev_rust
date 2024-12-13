@@ -4,8 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+<<<<<<< HEAD
 wasm-bindgen = "0.2"
 web-sys = { version = "0.3", features = ["Window", "Document", "Element"] }
+=======
+warp = "0.3"
+>>>>>>> 44960a8e483968830221ea1a2335a19f51e736f3
 
-[lib]
-crate-type = ["cdylib", "rlib"]
+[[bin]]
+name = "with_rust"
+path = "src/lib.rs"

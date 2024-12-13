@@ -1,0 +1,39 @@
+html,
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #00ff7f; /* Açık yeşil arka plan */
+	height: 100%;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.card {
+	background-color: #d3d3d3; /* Açık gri */
+	width: 200px;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 10px;
+}
+
+.image {
+	background-color: white;
+	border-radius: 10px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.description {
+	font-size: 14px;
+	color: #333;
+}

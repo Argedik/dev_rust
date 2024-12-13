@@ -6,7 +6,8 @@ use std::path::Path;
 fn main() {
     // let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\besin-uygulamasi";
     // let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\rust";
-    let root_path = "C:\\Users\\enes.gedik\\Desktop\\fe\\rust\\website\\with_rust";
+    let root_path = "C:\\Albatros\\DEV_NEW\\Inter_AML_ALB";
+
     let mut output = Vec::new(); // Dosya yolu ve içeriğini saklamak için bir koleksiyon
     let mut ignored = HashSet::new(); // Hariç tutulacak dosya ve klasörlerin seti
 
@@ -18,6 +19,14 @@ fn main() {
     ignored.insert("styles.css".to_string());
     ignored.insert("utilizable.html".to_string());
     ignored.insert("utilizable.markdown".to_string());
+    ignored.insert("ExternalLibraries".to_string());
+    ignored.insert("InterAml.sln".to_string());
+    ignored.insert("InterAml.vssscc".to_string());
+    ignored.insert("Intertech.Dwh.Stap.Db.csproj".to_string());
+    ignored.insert("UIParameter.cs".to_string());
+    ignored.insert("documentservice.wsdl".to_string());
+    
+    
     
 
     list_files_only(root_path, root_path, &mut ignored, &mut output);

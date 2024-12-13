@@ -2,4 +2,11 @@
   background-color: teal;
   width: 10rem;
   height: 10rem;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }/*# sourceMappingURL=styles.css.map */
