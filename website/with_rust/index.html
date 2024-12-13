@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Yew App</title>
+		<title>Rust WASM HTML CSS</title>
+		<link data-trunk rel="scss" href="style.scss" />
 	</head>
 	<body>
-		<div id="root"></div>
+		<div id="output">Loading...</div>
 		<script type="module">
-			import init from './pkg/yew_app.js';
+			import init from './pkg/rust_wasm_html_css.js';
 			init();
 		</script>
 	</body>
