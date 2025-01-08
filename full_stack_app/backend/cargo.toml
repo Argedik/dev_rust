@@ -1,0 +1,18 @@
+[package]
+name="fullStackApp"
+edition="2024"
+version="0.1.0"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1.28", features = ["macros"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.8", features = ["sqlite", "runtime-tokio-native-tls"] }
+uuid = "1.4"
+thiserror = "2.0"
+tower = "0.5"
+tower-http = { version = "0.6", features = ["cors"] }
+
+# Geliştirme aşamasında otomatik DB migrasyonları için (isteğe bağlı):
+sqlx-cli = { version = "0.8", features = ["sqlite"] }
