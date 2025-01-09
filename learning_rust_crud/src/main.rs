@@ -1,24 +1,8 @@
-#![allow(dead_code)]
+mod model;
+mod create;
 
-#[derive(Debug)]
-struct User {
-    id: u32,
-    name: String,
-}
-
-/// Yeni bir kullanıcı oluşturur ve users vektörüne ekler.
-/// 
-/// # Parametreler
-/// - `users`: Kullanıcı listesinin mutable referansı
-/// - `id`: Kullanıcıya verilecek ID
-/// - `name`: Kullanıcının adı
-fn create_user(users: &mut Vec<User>, id: u32, name: &str) {
-    let new_user = User {
-        id,
-        name: name.to_string(),
-    };
-    users.push(new_user);
-}
+use model::User;
+use create::create_user;
 
 /// Belirli bir ID'ye sahip kullanıcıyı vektörde arar ve döndürür.
 /// 
