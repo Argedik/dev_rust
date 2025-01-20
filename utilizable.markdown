@@ -14,14 +14,14 @@
 
 -->
 
-### cargo kodları
+### cargo terminal kodları
 - ***new*** proje oluşturma
 - ***build*** proje derleme
 - ***run*** projeyi derler ve çalıştırır
 - ***check*** hata kontrolü yapılabiliyor
 - ***cargo build --release*** proje yayınlama (*target/debug yerine target/release klasörü içine dosyalar oluşturulacaktır.*)
 - main.rs dosyasını src içine ve target dosyasına da build ve debug dosyalarını kaydetmeyi sağlıyor
-
+- ***rustup doc --std*** std kütüphane dökümanlarını tarayıcıda açar
 
 ***&mut ile mut arasındaki fark;*** **mut** main fonksiyonu içinde değiştirilebilir. **&mut** değişkenin bellekte referans olarak aldığı değişkenin değerini değiştiriyor.
 ***struct*** <u>Veri türleri başlığı altına yer alır.</u> Javascriptte class içine tanımlanan constructor örneğine benzer ya da es6 öncesi obje tanımlamasına benzer bir yapı. c#, c, c++, go gibi dillerde de kullanılıyor. 
