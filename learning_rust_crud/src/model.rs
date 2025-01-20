@@ -1,5 +1,7 @@
-// #[Derive(Debug)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug)]
 pub struct User {
-  id: u32,
-  name: String,
+    pub id: u32,
+    pub name: String,
 }
